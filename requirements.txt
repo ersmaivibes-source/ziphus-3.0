@@ -1,0 +1,74 @@
+# sudo apt install build-essential
+# sudo apt install python3.12-dev
+
+# sudo apt install redis-server
+# sudo systemctl start redis
+
+# sudo apt install mysql-server
+# sudo systemctl start mysql
+
+# CREATE DATABASE ziphus CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+# CREATE USER IF NOT EXISTS 'ziphus_user'@'%' IDENTIFIED BY 'Ziphus_net_database';
+# GRANT ALL PRIVILEGES ON ziphus.* TO 'ziphus_user'@'%';
+# FLUSH PRIVILEGES;
+# EXIT;
+
+
+
+# general Framework - Latest 2025 Versions
+hydrogram>=0.2.0
+tgcrypto>=1.2.5
+
+# Async Database - Optimized MySQL
+aiomysql>=0.2.0
+cryptography>=43.0.0  # Latest security patches
+
+# High-Performance Redis
+redis[hiredis]>=5.0.8  # Combined for better performance
+
+# Modern Password Security
+bcrypt>=4.2.0
+argon2-cffi>=23.1.0  # Industry standard 2025
+
+# Environment & Config
+python-dotenv>=1.0.1
+
+# Modern Date/Time (replaces pytz)
+zoneinfo>=0.1;python_version<"3.9"  # Backport if needed
+
+# Email Security
+aiosmtplib>=3.0.2
+email-validator>=2.2.0
+
+# High-Performance Logging
+structlog>=24.2.0  # Primary structured logging
+orjson>=3.10.0  # Fast JSON serialization
+
+# File Processing
+python-magic>=0.4.27
+filetype>=1.2.0
+
+# Modern Rate Limiting
+aiolimiter>=1.1.0
+
+# Security Stack
+certifi>=2024.8.30  # Latest CA bundle
+httpx>=0.27.0  # Modern async HTTP (replaces requests)
+markupsafe>=2.1.5
+
+# Input Validation
+bleach>=6.1.0
+validators>=0.22.0
+pydantic>=2.8.0  # Modern data validation
+
+# Monitoring & Performance
+prometheus-client>=0.20.0
+psutil>=6.0.0
+
+# Security & Auth
+PyJWT>=2.9.0
+cryptography-vectors>=43.0.0
+sentry-sdk>=2.12.0
+
+
+
